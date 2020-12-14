@@ -4,7 +4,7 @@ import eventservice from "../../lib/event-service";
 
 class Event extends Component {
     state = {
-        events: {}
+        events: []
     }
 
     getEvents = async () =>{
@@ -13,7 +13,7 @@ class Event extends Component {
             this.setState({
                 events: theEvents
             })
-            
+            console.log(theEvents)
         } catch (error) {
             console.log(error)
         }
@@ -26,7 +26,15 @@ class Event extends Component {
     render(){
         const {events} = this.state
         return(
-            <h1>Hello World</h1>
+            <div>
+            {events && events.length !== 0 ? events.map((event) =>{
+                return (<div>
+                    <h1>{event.name}</h1>
+                    <h3>{event.date}</h3>
+                    <h3>{event.location}</h3>
+                </div>)
+            }): null}
+           </div>
         )
     }
 }
