@@ -16,8 +16,8 @@ function App() {
     <div className="App">
      <Switch>
       <Route exact path='/' component={Home}/>
-      <PrivateRoute exact path='/events' component={Events}/>
-      <PrivateRoute exact path='/event/:id' component={EventDetail}/>
+      <Route exact path='/events' component={Events}/>
+      <Route exact path='/event/:id' component={EventDetail}/>
      </Switch>
     </div>
   );
