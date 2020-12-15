@@ -5,7 +5,7 @@ import './Onboarding.css'
 export default function Onboarding() {
     return (
         <div className="bodyOnboarding">
-   <div className="container">
+   <div className="container-onboarding">
   <div className="poster">
     <div className="poster__img"></div>
     <div className="poster__info">

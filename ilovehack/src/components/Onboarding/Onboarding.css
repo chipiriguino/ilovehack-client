@@ -7,7 +7,7 @@
     background: #eee;
     font-size: 18px;
 }
-.container {
+.container-onboarding {
     display: block;
     width: 375px;
     height: 677px;
@@ -19,7 +19,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.container:before {
+.container-onboarding :before {
     content: "";
     display: block;
     position: absolute;
