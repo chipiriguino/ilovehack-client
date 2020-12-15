@@ -10,7 +10,7 @@ class User {
 
   getUser = async() => {
     try {
-        const theUser = await this.user.get('/user')
+        const theUser = await this.user.get('/profile')
         return theUser.data
     } catch (error) {
         console.log(error)
@@ -19,7 +19,7 @@ class User {
 
   editUser = async({fullname, password, birthdate, gender, email, description, isHorny, searchFor, imgPath}) => {
     try {
-        const newUser = await this.user.put(`/user/edit`, {fullname, password, birthdate, gender, email, description, isHorny, searchFor, imgPath})
+        const newUser = await this.user.put(`/profile/edit`, {fullname, password, birthdate, gender, email, description, isHorny, searchFor, imgPath})
         return newUser.data
     } catch (error) {
         console.log(error)
