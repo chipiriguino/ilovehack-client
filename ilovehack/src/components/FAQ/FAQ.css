@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nova+Mono);
-/* body {background: #4A5679;} */
+.titrle-FAQ {
+  background-color: #4A5679;
+}
 .box-container {
   width: 800px;
   margin:0 auto;
