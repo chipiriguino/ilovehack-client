@@ -11,7 +11,7 @@
     align-items: center;
     font-family: 'Poppins' , sans-serif;
     color: white;
-    background: radial-gradient(circle, #8100eb, white);
+    background: radial-gradient(circle, rgb(38, 135, 180), white);
   }
   
   .spider {
