@@ -9,6 +9,8 @@ import PrivateRoute from "./components/componentRoutes/PrivateRoute";
 import Home from './components/Home/Home.jsx'
 import Events from './components/Events/Events.jsx'
 import EventDetail from './components/EventDetails/EventDetails.jsx'
+import Error from './components/ErrorPage/Error.jsx'
+import FAQ from './components/FAQ/FAQ.jsx'
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <Route exact path='/' component={Home}/>
       <Route exact path='/events' component={Events}/>
       <Route exact path='/event/:id' component={EventDetail}/>
+      <Route exact path='/error' component={Error}/>
+      <Route exact path='/FAQ' component={FAQ}/>
      </Switch>
     </div>
   );
