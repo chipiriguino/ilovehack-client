@@ -14,8 +14,8 @@ export default function Onboarding() {
     </div>
   </div>
   <div className="btn-onboarding">
-  <a href="#">Next</a>
-  <a href="#">Skip</a>
+  <a href="/error">Next</a>
+  <a href="/error">Skip</a>
   </div>
 </div>
     </div>
